@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Prunisac</string>
+    <string-array name="vProductos">
+        <item>Seleccione</item>
+        <item>Mouse</item>
+        <item>Impresora</item>
+        <item>PC Desktop</item>
+        <item>Monitor</item>
+        <item>Teclado</item>
+        <item>USB</item>
+        <item>Parlantes</item>
+    </string-array>
 </resources>

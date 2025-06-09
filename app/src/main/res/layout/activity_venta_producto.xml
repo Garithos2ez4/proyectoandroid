@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ActivityVentaProducto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VENTA DE PRODUCTOS"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione un Producto:"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinnerProd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/vProductos"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageProd"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/seleccione" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad a Comprar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiedtCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad a Comprar"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/chkDelivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery (S/. 25)" />
+
+    <CheckBox
+        android:id="@+id/chkGarantia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Garantía Extendida (10%)" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbBoleta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Boleta" />
+
+        <RadioButton
+            android:id="@+id/rbFactura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Factura" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnNuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nuevo" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calcular" />
+
+        <Button
+            android:id="@+id/btnPagar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pagar" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
